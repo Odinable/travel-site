@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./Button";
+import { FaCirclePlay } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -17,7 +18,9 @@ const Hero = () => {
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         /> */}
 
-        <h1 className="bold-52 lg:bold-88">EXPLORE THE VALLEY OF HUNZA</h1>
+        <h1 className="bold-52 lg:bold-88 text-red-700">
+          EXPLORE THE VALLEY OF HUNZA
+        </h1>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
           We want to be on each of your journeys seeking the satisfaction of
           seeing the incorruptible beauty of nature. We can help you on an
@@ -48,34 +51,34 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button type="button" title="Download App" variant="btn_green" />
+          <Button type="button" title="Download App" variant="btn_red" />
           <Button
             type="button"
             title="How we work?"
-            icon="/play.svg"
+            svgIcon={<FaCirclePlay color="red" size={20} />}
             variant="btn_white_text"
           />
         </div>
       </div>
 
       <div className="relative flex flex-1 items-start">
-        <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
+        <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-red-700 px-7 py-8">
           <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16 text-gray-20">Location</p>
+              <p className="regular-16 text-white">Location</p>
               <Image src="/close.svg" alt="close" width={24} height={24} />
             </div>
-            <p className="bold-20 text-white">Aguas Calientes</p>
+            <p className="bold-20 text-white">HUNZA VALLEY</p>
           </div>
 
           <div className="flexBetween">
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 mi</p>
+              <p className="regular-16 block text-white">Distance</p>
+              <p className="bold-20 text-white">747.3 mi</p>
             </div>
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2.040 km</p>
+              <p className="regular-16 block text-white">Elevation</p>
+              <p className="bold-20 text-white">2.348 km</p>
             </div>
           </div>
         </div>
