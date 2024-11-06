@@ -31,6 +31,11 @@ body {
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
   }
 
+  .icon-hover:hover {
+    filter: brightness(50) saturate(50%) invert(70%) sepia(100%) saturate(1000%)
+      hue-rotate(-30deg) brightness(0.9);
+  }
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }
