@@ -6,7 +6,7 @@ type ButtonProps = {
   title: string;
   icon?: string;
   variant: string;
-  svgIcon?: any;
+  svgIcon?: React.ReactNode;
 };
 
 const Button = ({ type, title, icon, variant, svgIcon }: ButtonProps) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import Image from "next/image";
-import { FaApple, FaAppStore, FaCirclePlay } from "react-icons/fa6";
+import { FaApple } from "react-icons/fa6";
 
 const GetApp = () => {
   return (
